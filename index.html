@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Europcar Portugal</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="src/style.css">
+</head>
+
+<body>
+    <div class="homepage">
+        <div class="hero">
+            <div class="hero_top">
+                <img src="https://images.ctfassets.net/wmdwnw6l5vg5/3AVzlE6EOEnZ9v0uVTc7B2/ecc4c6a838c41bd71ae5319a15a5e49e/Background-HP_VF.jpg?fm=webp" class="hero_top_image">
+                <div class="header_componente">
+                    <header class="header_navegador">
+                        <div class="logo">
+                            <img src="img\logo.png" class="imagens logo_img">
+                        </div>
+                        <nav class="header_navbar__right">
+                            <ul>
+                                <li>
+                                    <div class="div_icon_nav">
+                                        <i class="material-icons">
+                                            account_circle
+                                        </i>
+                                        <p class="header_text">
+                                            Log in
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="div_icon_nav">
+                                        <img class="us_flag" src="img/usflag.svg">
+                                        <p class="header_text">
+                                            US
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="div_icon_nav">
+                                        <i class="material-icons">
+                                            info_outline
+                                        </i>
+                                        <p class="header_text">
+                                            Help
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="div_icon_nav">
+                                        <i class="material-icons">
+                                            menu
+                                        </i>
+                                        <p class="header_text">
+                                            Menu
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </nav>
+                    </header>
+                </div>
+            </div>
+            <div class="hero_form">
+
+                <div class="highlight">
+                    <div class="highlighted-deal">
+                        <span class="deal-text"><span class="stations">+3500 Stations Worldwide</span> : <span class="cancellation">Free Cancellation</span> : <span class="discount">10% Members' Discount</span></span>
+                        <a href="#" class="more-details">More details <span class="arrow">›</span></a>
+                    </div>
+                </div>
+
+
+                <div class="form">
+                    <div class="form-container">
+                        <p class="vehicle-type-label">What type of vehicle?</p>
+                        <div class="vehicle-type">
+                            <button class="active"><svg class="vehicle-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 16c-.83 0-1.5-.67-1.5-1.5S5.67 13 6.5 13s1.5.67 1.5 1.5S7.33 16 6.5 16zm11 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zM5 11l1.5-4.5h11L19 11H5z"/></svg>Cars</button>
+                            <button><svg class="vehicle-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M17 5H3c-1.1 0-2 .89-2 2v9h2c0 1.65 1.34 3 3 3s3-1.35 3-3h5.5c0 1.65 1.34 3 3 3s3-1.35 3-3H23v-5l-3-4h-3V5zM3 11V7h4v4H3zm3 6.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm11.5 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zM15 11V7h2l3 4h-5z"/></svg>Vans & Trucks</button>
+                        </div>
+                        <div class="form-fields">
+                            <div class="field field-location">
+                                <div class="label-row">
+                                    <label>Pickup and return location</label>
+                                    <label class="same-location-check">
+                                        <input type="checkbox" checked> Same return location
+                                    </label>
+                                </div>
+                                <div class="input-with-icon">
+                                    <i class="material-icons input-icon">location_on</i>
+                                    <input type="text" placeholder="City, address, point of interest">
+                                </div>
+                            </div>
+                            <div class="field field-date">
+                                <label>Pickup date and time</label>
+                                <div class="date-time-group">
+                                    <div class="input-with-icon">
+                                        <i class="material-icons input-icon">calendar_today</i>
+                                        <input type="text" placeholder="Pick up date">
+                                    </div>
+                                    <input type="text" placeholder="Time">
+                                </div>
+                            </div>
+                            <div class="field field-date">
+                                <label>Return date and time</label>
+                                <div class="date-time-group">
+                                    <div class="input-with-icon">
+                                        <i class="material-icons input-icon">calendar_today</i>
+                                        <input type="text" placeholder="Return date">
+                                    </div>
+                                    <input type="text" placeholder="Time">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="extra-options">
+                            <label class="dropdown-label">I am 
+                                <select>
+                                    <option>26+</option>
+                                </select>
+                                <i class="material-icons dropdown-arrow">expand_more</i>
+                            </label>
+                            <label class="dropdown-label">I live in 
+                                <select>
+                                    <option>Portugal</option>
+                                </select>
+                                <i class="material-icons dropdown-arrow">expand_more</i>
+                            </label>
+                            <label class="negotiated-rate">
+                                <input type="checkbox"> I have a <strong>negotiated rate</strong>
+                                <i class="material-icons info-icon">info_outline</i>
+                            </label>
+                            <button class="search-btn">Search</button>
+                        </div>
+                    </div>
+                </div>
+                <nav class="quick-links">
+                    <div class="container">
+                        <ul>
+                            <li><a href="#">My bookings <span class="link-arrow">→</span></a></li>
+                            <li><a href="#">Members' Discount <span class="link-arrow">→</span></a></li>
+                            <li><a href="#">See all our deals <span class="link-arrow">→</span></a></li>
+                            <li><a href="#">Go to Europcar Business <span class="link-arrow">→</span></a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <section class="offers-and-app-content">
+                <div class="container">
+
+                    <h1>Today's car rental and van rental offers</h1>
+
+                    <div class="offers-grid-two">
+
+                        <a href="#" class="offer-card-new" style="background-image: url('img/imagem3.png');">
+                            <div class="discount-tag-left">UP TO<br><strong>20%</strong><br>OFF</div>
+                            <div class="overlay-text">Your winter trip starts here</div>
+                        </a>
+
+                        <div class="card-small-group">
+
+                            <a href="#" class="offer-card card-small card-small-1" 
+                            style="background-image: url('img/imagem1.jpg');">
+                                <div class="discount-tag">SAVE UP TO<br><strong>20%</strong><br>NOW</div>
+                                <div class="overlay-text">Discover Italy</div>
+                            </a>
+
+                            <a href="#" class="offer-card card-small card-small-2" 
+                            style="background-image: url('img/imagem4.png');">
+                                <div class="discount-tag">UP TO<br><strong>15%</strong><br>OFF</div>
+                                <div class="overlay-text">Visit Spain and Portugal</div>
+                            </a>
+
+                        </div>
+                    </div>
+
+                    <div class="app-section">
+
+                        <div class="app-image">
+                            <img src="img/imagem2.png" alt="Europcar App no celular" style="width: 100%; height: auto; border-radius: 8px;">
+                        </div>
+
+                        <div class="app-content">
+                            <p class="app-os-text">Android & iOS</p>
+                            <h2 class="app-title">Car and van hire made easy</h2>
+                            <p>Your car rental is just a few taps away with the new Europcar iOS app! Download the Europcar mobile app now and avail exclusive discounts.</p>
+                            <a href="#" class="download-button">Download Europcar APP</a>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <div class="container1">
+
+                <section class="car-fleet">
+                    <div class="secssion1">
+                        <h2 class="main-title">A nossa frota de aluguer de carros e comerciais</h2>
+                        <p class="subtitle">Escolha a sua viatura desde modelos económicos aos de luxo</p>
+                    </div>
+
+                    <section class="categorias">
+                        <div class="categoria">
+                            <h2>Carros Urbanos</h2>
+                            <p>Estes variam entre carros urbanos compactos e eficientes em termos de combustível.</p>
+                            <a href="#">Mais info</a>
+                        </div>
+                        <div class="categoria">
+                            <h2>Elétricos</h2>
+                            <p>Descubra os nossos modelos elétricos, híbridos ou plug-in.</p>
+                            <br>
+                            <a href="#">Mais info</a>
+                        </div>
+                        <div class="categoria">
+                            <h2>Premium</h2>
+                            <p>Pode escolher entre uma vasta gama de veículos premium fabricados por fabricantes lendários.</p>
+                            <a href="#">Mais info</a>
+                        </div>
+                        <div class="categoria">
+                            <h2>Comerciais</h2>
+                            <p>Uma gama de opções para alugar de carrinhas e veículos comerciais.</p>
+                            <a href="#">Mais info</a>
+                        </div>
+                    </section>
+                </section>
+
+                <div class="carros">
+                    <img src="img/carrourbano.png">
+                    <img src="img/carroeletrico.png">
+                    <img src="img/carrosuv.png">
+                    <img src="img/carrinha.png">
+                </div>
+
+                <section class="benefits-section">
+                    <div class="benefit-card">
+                        <div class="icon-container">
+                            <img src="img/trofeu.svg" alt="Ícone de Descontos e Benefícios">
+                        </div>
+                        <h3 class="card-title">Discounts and benefits</h3>
+                        <p class="card-subtitle">Become a Privilege For You member</p>
+                        <a href="#" class="action-button primary-button">Privilege For You Specific Terms</a>
+                    </div>
+
+                    <div class="benefit-card">
+                        <div class="icon-container">
+                            <img src="img/calendario.svg" alt="Ícone de Calendário">
+                        </div>
+                        <h3 class="card-title">Daily, weekly or monthly</h3>
+                        <p class="card-subtitle">Rent a car as long as you need</p>
+                        <a href="#" class="action-button primary-button">Book now</a>
+                    </div>
+
+                    <div class="benefit-card">
+                        <div class="icon-container">
+                            <img src="img/checkin.svg" alt="Ícone de Check-in Online">
+                        </div>
+                        <h3 class="card-title">Online check-in</h3>
+                        <p class="card-subtitle">Get on the road as fast as possible</p>
+                        <a href="#" class="action-button primary-button">Check in now</a>
+                    </div>
+                </section>
+
+                <section class="news-section">
+                    <div class="container news-container">
+                        <h2>What's new?</h2>
+                        <p>Find all the latest and interesting news about Europcar here!</p>
+
+                        <div class="news-grid">
+
+                            <div class="news-card privilege-card">
+                                <a href="#">
+                                    <div class="card-image-wrapper">
+                                        <img src="img/Privilege_For_You_banner.jpg" class="card-image">
+                                        <div class="image-text-overlay">
+                                            <h3>ENJOY A SEAMLESS RENTAL EXPERIENCE ALL YEAR ROUND</h3>
+                                            <p class="small-text">Enjoy exclusive benefits from day one</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="card-content">
+                                    <p class="source-text">Get more from every rental</p>
+                                    <h4>Privilege For You Loyalty Programme</h4>
+                                    <ul class="benefits-list">
+                                        <li>10% off vehicle hire all year round</li>
+                                        <li>Special loyalty offer</li>
+                                        <li>Surprise rewards starting from 300 points And more...</li>
+                                    </ul>
+                                    <a href="#" class="read-more-link">Join for free</a>
+                                </div>
+                            </div>
+
+                            <div class="news-card us-holidays-card">
+                                <a href="#">
+                                    <div class="card-image-wrapper">
+                                        <img src="img/us-holidays.jpg" class="card-image">
+                                    </div>
+                                </a>
+                                <div class="card-content">
+                                    <p class="source-text">Places to see</p>
+                                    <h4>Where are you going to spend your holidays in the US?</h4>
+                                    <p class="description">Discover our top 10 destinations in the USA for your breaks. It is a wonderful time to enjoy the United States of America with your family, as a couple or with friends.</p>
+                                    <a href="#" class="read-more-link">Read +</a>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </section>
+            </div>
+            <section class="location-links-section">
+                <div class="container location-links-container">
+                    <div class="info-block">
+                        <div class="globe-icon">
+                            <img src="/img/globo.svg" alt="Globe Icon">
+                        </div>
+                        <br>
+                        <h2>Car Rental in the US with Europcar</h2>
+                        <p><strong>3835</strong> Europcar locations in over <span class="highlight">140</span> countries</p>
+                        <a href="#" class="all-countries-link">All countries</a>
+                    </div>
+
+                    <div class="link-columns">
+
+                        <div class="link-column">
+                            <h4>Top Locations</h4>
+                            <ul>
+                                <li><a href="#">Car Rental in USA</a></li>
+                                <li><a href="#">Car Rental in Germany</a></li>
+                                <li><a href="#">Car Rental in France</a></li>
+                                <li><a href="#">Car Rental in Spain</a></li>
+                                <li><a href="#">Car Rental in Italy</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="link-column">
+                            <h4>Top Cities in the US</h4>
+                            <ul>
+                                <li><a href="#">Car Rental in San Fransisco</a></li>
+                                <li><a href="#">Car Rental in Los Angeles</a></li>
+                                <li><a href="#">Car Rental in Miami</a></li>
+                                <li><a href="#">Car Rental in Orlando</a></li>
+                                <li><a href="#">Car Rental in Las Vegas</a></li>
+                                <li><a href="#">Car Rental in Newark</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="link-column">
+                            <h4>Top Cities in USA</h4>
+                            <ul>
+                                <li><a href="#">Car Rental in Chicago</a></li>
+                                <li><a href="#">Car Rental in Dallas</a></li>
+                                <li><a href="#">Car Rental in Denver</a></li>
+                                <li><a href="#">Car Rental in San Diego</a></li>
+                                <li><a href="#">Car Rental in Seattle</a></li>
+                                <li><a href="#">Car Rental in Burbank</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="link-column">
+                            <h4>Top Cities in USA</h4>
+                            <ul>
+                                <li><a href="#">Car Rental in Austin</a></li>
+                                <li><a href="#">Car Rental in Oakland</a></li>
+                                <li><a href="#">Car Rental in San Antonio</a></li>
+                                <li><a href="#">Car Rental in Salt Lake City</a></li>
+                                <li><a href="#">Car Rental in Fort Lauderdale</a></li>
+                                <li><a href="#">Car Rental in Palm Beach</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section class="accordion-section">
+                <div class="container accordion-container">
+                    <div class="accordion-item" id="acordeao-1">
+
+                        <div class="accordion-header">
+                            <h2>Book a car or truck rental with Europcar</h2>
+
+                            <button class="accordion-toggle-btn" aria-expanded="false" aria-controls="accordion-content-1">
+                        <span class="accordion-icon">+</span>
+                    </button>
+                        </div>
+                        <div class="accordion-content" id="accordion-content-1" hidden>
+                            <p>Conteúdo detalhado sobre como reservar um carro ou camião com a Europcar, incluindo termos e condições, promoções, etc.</p>
+                            <ul>
+                                <li>Opções de veículos</li>
+                                <li>Localizações disponíveis</li>
+                                <li>Como funciona o processo de reserva</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="partners-section">
+                <div class="container partners-container">
+                    <h3>Our alliances & partners</h3>
+
+                    <div class="partners-logo-grid">
+
+                        <div class="partner-logo">
+                            <img src="img/parceiros.png">
+                        </div>
+
+                        <div class="partner-logo align-right-partner">
+                            <img src="img/parceiros1.png">
+                        </div>
+
+                    </div>
+
+                    <a href="#" class="more-partners-link">More partners</a>
+                </div>
+            </section>
+
+            <section class="service-blocks-section">
+                <div class="container service-blocks-grid">
+
+                    <div class="service-block">
+                        <h3>About your booking</h3>
+                        <p>View, modify or cancel a booking</p>
+                        <p>Manage your booking</p>
+                    </div>
+
+                    <div class="service-block offer-block">
+                        <h3>Exclusive offers</h3>
+                        <p>Sign up to our newsletter to receive our latest offers</p>
+                        <a href="#" class="arrow-button">
+                        </a>
+                    </div>
+
+                    <div class="service-block app-download-block">
+                        <h3>Same smart app. More mobility.</h3>
+                        <a href="#" class="info-link">For more information</a>
+
+                        <div class="app-buttons">
+                            <a href="#"><img src="img/googleplay.svg" class="app-badge"></a>
+                            <a href="#"><img src="img/appstore.svg" class="app-badge"></a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- NOVA SEÇÃO: LINKS EM COLUNAS (FOOTER-LIKE) -->
+                <br><br><br>
+
+                <div class="container link-columns-container">
+
+                    <div class="link-column">
+                        <h4>More information</h4>
+                        <ul>
+                            <li><a href="#">Contact us</a></li>
+                            <li><a href="#">Europcar on mobile</a></li>
+                            <li><a href="#">Find a rental location</a></li>
+                            <li><a href="#">Accessibility Statement</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="link-column">
+                        <h4>Business center</h4>
+                        <ul>
+                            <li><a href="#">Business solutions</a></li>
+                            <li><a href="#">Tour operators</a></li>
+                            <li><a href="#">Travel agents</a></li>
+                            <li><a href="#">Corporate program</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="link-column">
+                        <h4>Europcar Mobility Group</h4>
+                        <ul>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Goldcar</a></li>
+                            <li><a href="#">Europcar On Demand</a></li>
+                            <li><a href="#">FOX Rent A Car</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="link-column">
+                        <h4>Legal Information</h4>
+                        <ul>
+                            <li><a href="#">Legal Information</a></li>
+                            <li><a href="#">Damage Management Policy</a></li>
+                            <li><a href="#">Privacy policy</a></li>
+                            <li><a href="#">Deposit Policy</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </section>
+            <div class="awards-container">
+                <div class="award-item">
+                    <img src="./img/europcar.svg" class="logo-e">
+                </div>
+
+                <div class="award-item">
+                    <img src="./img/travisor.png" class="logo-tripadvisor">
+                    <p class="award-description">TripAdvisor **Travelers' Favourites** (for Germany, France and Spain)</p>
+                </div>
+
+                <div class="award-item">
+                    <img src="./img/wtw.png" class="logo-wta">
+                    <p class="award-description">**World's Leading Car Rental Company Website**</p>
+                </div>
+
+                <div class="award-item">
+                    <img src="./img/Kayak.jpg" alt="KAYAK Best Cleanliness 2020" class="logo-kayak">
+                    <p class="award-description">**KAYAK 2020 Best Cleanliness**</p>
+                </div>
+            </div>
+
+            <footer>
+                <div class="footer-content-left">
+                    <span class="copyright">©Europcar 2025</span>
+                    <span class="separator">|</span>
+                    <a href="#" class="footer-link">Site map</a>
+                    <span class="separator">|</span>
+                    <a href="#" class="footer-link">Legal mentions</a>
+                    <span class="separator">|</span>
+                    <a href="#" class="footer-link">Cookie Policy</a>
+                    <span class="separator">|</span>
+                    <a href="#" class="footer-link">Contact us</a>
+                </div>
+
+                <div class="footer-content-right">
+                    <a href="#" class="social-icon">
+                        <i class="icon-email">📧</i>
+                    </a>
+
+                    <a href="[Link para o LinkedIn]" target="_blank" class="social-icon">
+                        <i class="icon-linkedin">in</i>
+                    </a>
+
+                    <a href="[Link para o WhatsApp]" target="_blank" class="whatsapp-icon">
+                        <i class="icon-whatsapp">💬</i>
+                    </a>
+                </div>
+            </footer>
+            <script src="/src/script.js"></script>
+</body>
+
+</html>
