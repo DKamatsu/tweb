@@ -1,0 +1,1037 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(0,0,0,0.6);
+  color: white;
+}
+
+.header_componente{
+  margin-top: 16px;
+  padding: 0 16px;
+  position: absolute;
+  width: 100%;
+}
+
+.header_navegador {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  max-width: 1128px;
+  width: 100%;
+}
+
+.logo_img{
+  display: inline-block;
+  height: 38px;
+  max-width: none;
+}
+
+header .logo {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+header nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.superflex-banner {
+    position: relative;
+    top: 60px;
+    background-color: #000;
+    color: white;
+    padding: 10px 0;
+    font-size: 0.9em;
+    z-index: 5;
+}
+
+.superflex-banner .container-full {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+}
+.superflex-banner a {
+    color: white;
+    text-decoration: none;
+    background-color: black;
+}
+
+.hero {
+    background-size: cover;
+    background-position: center;
+    padding: 150px 20px 50px;
+    min-height: 400px;
+    background-color: black; 
+}
+
+.form-container {
+    background: white;
+    padding: 1.5rem 2rem;
+    border-radius: 8px;
+    max-width: 900px;
+    margin: 0 auto;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.vehicle-type {
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    display: inline-flex;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.vehicle-type button {
+    padding: 0.8rem 1.5rem;
+    border: none;
+    background: white;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.vehicle-type .active {
+    background: #00a650;
+    color: white;
+}
+
+.form-fields {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 250px;
+    min-width: 200px;
+}
+
+.field-location {
+    flex: 2 1 350px;
+    position: relative;
+}
+
+.same-location-check {
+    position: absolute;
+    top: 5px;
+    right: 0;
+    font-size: 0.8em;
+    color: #00a650;
+}
+
+.field input, .field select {
+    padding: 0.8rem;
+    margin-top: 0.3rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.field label {
+    font-size: 0.85rem;
+    font-weight: bold;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.date-time-group {
+    display: flex;
+    gap: 0.5rem;
+}
+.date-time-group input {
+    flex: 1;
+}
+
+.extra-options {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.extra-options label {
+    font-size: 0.9rem;
+}
+.extra-options select {
+    padding: 0.4rem;
+    border: 1px solid #ccc;
+}
+
+.search-btn {
+    background: #FFD700;
+    color: #000;
+    border: none;
+    padding: 0.8rem 2.5rem;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-left: auto;
+}
+
+.quick-links {
+    background: #000;
+    padding: 1.5rem 0;
+    margin-bottom: 40px;
+}
+
+.quick-links ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    padding: 0;
+    margin: 0;
+}
+
+.quick-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.95rem;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.offers-grid-custom {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.offer-card {
+    position: relative;
+    height: 350px;
+    border-radius: 8px; 
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    align-items: flex-end;
+    padding: 20px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.card-large {
+    grid-column: span 2;
+}
+
+.card-small-group {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card-small {
+    height: 165px; 
+}
+
+.overlay-text {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.7); 
+}
+
+.discount-tag {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #e50027; 
+    color: white;
+    padding: 5px 10px;
+    font-weight: bold;
+    font-size: 0.9em;
+    line-height: 1.2;
+    text-align: center;
+    border-bottom-left-radius: 8px;
+}
+
+.app-section {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding-top: 40px;
+}
+
+.app-image {
+    flex: 1; 
+    max-width: 60%;
+}
+
+.app-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+}
+
+.app-content {
+    flex: 1;
+    max-width: 40%;
+}
+
+.app-content p {
+    font-size: 0.9em;
+    line-height: 1.5;
+}
+
+.app-os-text {
+    font-size: 0.8em;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.app-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.download-button {
+    display: inline-block;
+    background-color: #ffcc00; 
+    color: black;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+.download-button:hover {
+    background-color: #e0b300;
+}
+
+
+/* a nossa frota*/
+
+
+.car-fleet{
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: left;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0);
+    color: #000;
+}
+
+.categorias {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.categoria {
+  width: 50%;
+  padding: 15px;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  text-align: center;
+  border: none;
+}
+
+.categorias a{
+  display: inline-block;
+  padding: 10px 20px;
+  color: green;
+  text-decoration: none;
+  border-radius: 5px;
+
+}
+
+.benefits-section {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 60px 20px;
+    background-color: #ffffff;
+    gap: 30px;
+}
+
+.benefit-card {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+}
+
+.icon-container {
+    margin: 0 auto 20px;
+    width: 80px; 
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+}
+
+.icon-container img {
+    max-width: 70%;
+    max-height: 70%; 
+    height: auto;
+}
+
+.card-title {
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #000000;
+    margin-bottom: 5px;
+}
+
+.card-subtitle {
+    font-size: 1em;
+    color: #666666;
+    margin-bottom: 30px;
+}
+
+.action-button {
+    display: inline-block;
+    padding: 15px 25px;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    width: 100%; 
+    box-sizing: border-box;
+}
+
+.primary-button {
+    background-color: #ffda00; 
+    color: #000000;
+    border: none;
+}
+
+.primary-button:hover {
+    background-color: #e6c500;
+}
+
+
+.carros{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.carros img{
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+
+
+
+
+
+
+
+/* Estilos para a seção 'What's new?' */
+.news-section {
+    width: 100%;
+    padding: 40px 0;
+    background-color: #ffffff;
+}
+
+.news-container {
+    max-width: 1200px; /* Alinhar com o resto do seu site */
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.news-section h2 {
+    font-size: 2em;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 5px;
+}
+
+.news-section p {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 25px; 
+}
+
+/* Layout de duas colunas (Grid) */
+.news-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Duas colunas de igual largura */
+    gap: 30px; /* Espaço entre as colunas */
+}
+
+/* Estilo base do cartão de notícia */
+.news-card {
+    border: 1px solid #e0e0e0; /* Borda sutil para definir o cartão */
+    border-radius: 8px;
+    overflow: hidden; /* Garante que a imagem se ajuste ao card */
+    background-color: #fff;
+}
+
+.news-card a {
+    text-decoration: none;
+    /* Remover 'color: inherit;' daqui */
+}
+
+.card-image-wrapper {
+    position: relative;
+}
+
+.card-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.image-text-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    /* Use um gradiente ou background semi-transparente para o texto */
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
+    padding: 15px;
+    color: #fff;
+}
+
+.image-text-overlay h3 {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 0 0 10px 0;
+}
+
+.image-text-overlay .small-text {
+    font-size: 0.9em;
+    color: #fdd200; /* Cor amarela do texto 'exclusive benefits' */
+    margin: 0;
+}
+
+
+/* Conteúdo de texto abaixo da imagem */
+.card-content {
+    padding: 20px;
+}
+
+.source-text {
+    font-size: 0.8em;
+    color: #999;
+    margin-bottom: 5px;
+}
+
+.card-content h4 {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.card-content .description {
+    font-size: 0.9em;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.benefits-list {
+    list-style-type: none; /* Remove os marcadores de lista padrão */
+    padding: 0;
+    margin-bottom: 15px;
+    font-size: 0.9em;
+    color: #333;
+}
+
+.benefits-list li:before {
+    content: "•"; /* Adiciona um marcador de ponto personalizado (ou use uma imagem de check/bullet point) */
+    color: #333; /* Cor verde para os pontos */
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+}
+
+.read-more-link {
+    color: #007038; /* Cor verde para o link */
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block; /* Para o '+ Read' ter espaço na linha */
+}
+
+
+
+
+/* Estilos para a seção de links de localização (Rodapé superior) */
+.location-links-section {
+    background-color: #f7f7f7; /* Fundo cinza claro */
+    padding: 60px 0;
+    margin-top: 40px; /* Para separar do conteúdo acima */
+}
+
+.location-links-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    max-width: 1200px; /* Use o mesmo container width que o resto do site */
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Bloco de informações à esquerda (Car Rental in the US) */
+.info-block {
+    flex-basis: 30%; /* Dá mais espaço ao bloco da esquerda */
+    padding-right: 20px;
+}
+
+.globe-icon {
+    /* Estilização para o ícone de globo */
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+    /* Aqui você adicionaria o background-image ou SVG para o ícone */
+}
+
+.info-block h2 {
+    font-size: 1.8em;
+    font-weight: 700;
+    color: #000;
+    line-height: 1.2;
+    margin: 0 0 15px 0;
+}
+
+.info-block p {
+    font-size: 1em;
+    color: #666;
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+
+.info-block .highlight {
+    color: #007038; /* Cor verde para o número de países (140) */
+    font-weight: bold;
+}
+
+.all-countries-link {
+    color: #007038; /* Cor verde para o link */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+/* Colunas de links à direita */
+.link-columns {
+    flex-basis: 70%;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.link-column {
+    flex: 1;
+    min-width: 150px; /* Garante que as colunas não fiquem muito estreitas */
+}
+
+.link-column h4 {
+    font-size: 1em;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 15px;
+}
+
+.link-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.link-column li {
+    margin-bottom: 8px;
+}
+
+.link-column a {
+    color: #666; /* Cor cinza para os links */
+    text-decoration: none;
+    font-size: 0.9em;
+}
+
+.link-column a:hover {
+    color: #007038; /* Mudança de cor ao passar o mouse */
+}
+
+
+
+
+.accordion-section {
+    border-bottom: 2px solid #ddd;
+}
+
+.accordion-header {
+    display: flex; /* Para alinhar o H2 e o botão lado a lado */
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0 60px;
+    cursor: default; /* O cursor é padrão, pois o clique não é na div inteira */
+    width: 100%;
+    background: none;
+    border: none;
+    text-align: left;
+    color: black;
+}
+
+.accordion-toggle-btn {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer; /* Apenas o botão tem o cursor de clique */
+    margin-left: 10px; /* Espaço para separar do H2 */
+}
+
+.accordion-icon {
+    /* Mantenha o estilo do ícone + */
+    font-size: 2em; 
+    font-weight: 300; 
+    color: #333;
+    display: block; /* Garante que a transformação funcione bem */
+    transition: transform 0.3s;
+}
+
+/* Gira o ícone + para um X quando ativo */
+.accordion-item.active .accordion-icon {
+    transform: rotate(45deg); 
+}
+/* Mantenha o CSS para .accordion-content e .accordion-item.active .accordion-content */
+
+
+/* --- ESTILOS DA SEÇÃO DE PARCEIROS (.partners-section) --- */
+.partners-section {
+    /* Corrigido para incluir border-bottom conforme solicitado */
+    padding: 10px 0 40px;
+    background-color: white; 
+     /* Adicionando borda inferior */
+}
+
+.partners-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.partners-section h3 {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 25px;
+}
+
+/* Layout dos Logos */
+.partners-logo-grid {
+    display: flex; 
+    align-items: center; 
+    gap: 50px; 
+    margin-bottom: 20px;
+}
+
+.partner-logo img {
+    max-height: 50px; 
+    width: auto;
+    display: block;
+}
+
+.more-partners-link {
+    display: inline-block;
+    color: #007038; 
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9em;
+    margin-top: 10px;
+}
+
+/* Estilo para empurrar um elemento para a direita usando Flexbox */
+.partner-logo.align-right-partner {
+    margin-left: auto;
+}
+
+
+/* --- ESTILOS DA SEÇÃO DE BLOCOS DE SERVIÇO (.service-blocks-section) --- */
+.service-blocks-section {
+    background-color: #f4f4f4; 
+    padding: 30px 0 20px;
+}
+
+.service-blocks-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px; 
+}
+
+.service-block {
+    background-color: white; 
+    /* REDUÇÃO DO PADDING: 30px nas laterais, 20px no topo/base */
+    padding: 20px 30px; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); 
+    /* REDUÇÃO DA ALTURA MÍNIMA */
+    min-height: 120px; /* Reduz de 200px para 150px (ajuste a seu gosto) */
+    position: relative;
+    
+    /* Configuração Flexbox para alinhamento inferior dos ícones */
+    display: flex;       
+    flex-direction: column; 
+}
+
+.service-block h3 {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #000;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.service-block p {
+    font-size: 0.9em;
+    color: #666;
+    line-height: 1.4;
+    margin-bottom: 10px;
+}
+
+/* Estilos específicos do Bloco de Ofertas */
+.offer-block {
+    padding-bottom: 80px; /* Espaço extra para o botão no canto */
+}
+
+.offer-block h3, .offer-block p {
+    margin-bottom: 10px; 
+}
+
+/* --- ESTILO DO BOTÃO DE SETA (UNIFICADO E CORRIGIDO PARA SVG) --- */
+.arrow-button {
+    /* Posicionamento e Dimensão do Quadrado */
+    position: absolute;
+    bottom: 30px; 
+    right: 30px; 
+    width: 45px; 
+    height: 45px; 
+    border-radius: 4px; /* Quadrado com cantos arredondados */
+    background-color: #ffda00; /* Fundo Amarelo */
+    text-decoration: none;
+    transition: background-color 0.2s;
+
+    /* CARREGAMENTO E AJUSTE DO SVG */
+    background-image: url('../img/seta.svg'); 
+    background-repeat: no-repeat;
+    background-position: center center;
+    /* CONTROLA O COMPRIMENTO DA SETA: Ajuste este valor! */
+    background-size: 60%; 
+}
+/* --- REMOVIDO: Regras .arrow-icon (Não são necessárias para SVG via background-image) --- */
+
+/* Estilos específicos do Bloco da App */
+.info-link {
+    color: #007038; 
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9em;
+    display: block; 
+    margin-bottom: 20px;
+}
+
+.app-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: auto; 
+}
+
+.app-badge {
+    height: 40px; 
+    width: auto;
+    display: block;
+}
+
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu li {
+    margin: 10px 0;
+    font-size: 16px;
+  }
+
+  .menu li a {
+    color: #333;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    background-color: #f0f0f0;
+  }
+
+  .menu li a:hover {
+    background-color: #ddd;
+  }
+
+  .legal-info {
+    margin-top: 20px;
+    text-align: center;
+  }
+
+.link-columns-container {
+    display: grid;
+    /* 4 colunas iguais */
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 30px;
+}
+
+.link-column h4 {
+    font-size: 1.1em;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: black;
+}
+
+.link-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.link-column li {
+    margin-bottom: 8px;
+}
+
+.link-column a {
+    color: #666;
+    font-size: 0.9em;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.link-column a:hover {
+    color: #ffda00; /* Destaque amarelo ao passar o mouse */
+}
+
+
+
+
+
+/* Container principal para alinhar todos os prêmios */
+.awards-container {
+    display: flex;
+    flex-direction: row; 
+    justify-content: center; 
+    align-items: center; 
+    padding: 30px 0px 10px;
+    background-color: #ffffff; 
+}
+
+/* Estilo para cada bloco de prêmio/logo */
+.award-item {
+    display: flex;
+    align-items: center; 
+    margin: 0 40px; 
+    /* Garante que o texto se quebre se necessário */
+    max-width: 250px; 
+}
+
+/* Estilo genérico para TODAS as imagens de logo/prêmio */
+.award-item img {
+    /* Altura para padronizar todas as imagens */
+    height: 70px; 
+    /* Garante que a imagem caiba e mantenha a proporção */
+    object-fit: contain; 
+    /* Espaço entre a imagem e o texto (aplica-se a TODAS) */
+    margin-right: 15px;
+}
+
+/* Estilo específico para a logo 'E' que não tem texto ao lado */
+.logo-e {
+    margin-right: 0; /* Remove o espaçamento extra definido acima */
+}
+
+/* Estilos de texto */
+.award-description {
+    font-size: 16px;
+    font-weight: 400;
+    color: #333;
+    margin: 0;
+}
+
+/* Garante que o texto em negrito se destaque */
+.award-description strong {
+    font-weight: 700;
+}
+
+
+
+/* Estilo geral do footer */
+footer {
+  background-color: black; /* Cor de fundo sutil */
+  padding: 20px; /* Espaçamento interno */
+  text-align: center; /* Centraliza o texto */
+  font-family: sans-serif; /* Fonte */
+}
+.copyright{
+    color: #d1d0d0;
+}
+/* Estilo para o conteúdo da esquerda */
+.footer-content-left {
+  margin-bottom: 10px;
+}
+
+.footer-content-left a {
+  color: white;
+  text-decoration: none; /* Remove o sublinhado dos links */
+  margin: 0 5px; /* Espaçamento entre os links */
+}
+
+/* Estilo para os ícones do LinkedIn e WhatsApp */
+.social-icon {
+  display: inline-block;
+  margin: 0 10px;
+  color: #007bff; /* Cor azul do LinkedIn */
+}
+
+.social-icon i {
+  font-size: 24px;
+}
